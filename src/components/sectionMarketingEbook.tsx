@@ -92,14 +92,14 @@ const SectionMarketingEbook = () => {
             Receber E-book Grátis
           </Button>
         </Grid>
-        <Grid item sm={6} xs={12}>
+        <Grid item sm={6} xs={12} sx={{}}>
           <img
             src={capa}
             alt=""
             style={{
               width: "200px",
-              justifyContent: "flex-end",
-              marginLeft: downSm ? "0px" : "200px",
+              justifyContent: "center",
+              marginLeft: downSm ? "50px" : upXl ? "200px" : "100px",
             }}
           />
         </Grid>
