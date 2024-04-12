@@ -16,7 +16,7 @@ const Footer = () => {
         justifyContent: "center",
         background: "#ddd6d6",
         flexDirection: "column",
-        paddingBottom: "50px",
+        paddingBottom: "20px",
       }}
     >
       <img
@@ -36,10 +36,15 @@ const Footer = () => {
         }}
       >
         <Typography
-          sx={{ display: "flex", alignItems: "center", marginRight: "20px" }}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            marginRight: "20px",
+            color: "gray",
+          }}
         >
           <EmailIcon
-            sx={{ fontSize: "18px", paddingRight: "5px", color: "#3d3c3c" }}
+            sx={{ fontSize: "18px", paddingRight: "5px", color: "#2d2c2c" }}
           />
           contato@ribasoficial.com.br
         </Typography>
@@ -53,7 +58,7 @@ const Footer = () => {
             <Typography
               sx={{
                 display: "flex",
-                color: "black",
+                color: "gray",
                 alignItems: "center",
                 marginRight: "20px",
                 fontStyle: "none",
@@ -64,7 +69,7 @@ const Footer = () => {
                 sx={{
                   fontSize: "18px",
                   paddingRight: "5px",
-                  color: "#3d3c3c",
+                  color: "#2d2c2c",
                   "&:hover": { color: "green" },
                 }}
               />
@@ -81,7 +86,7 @@ const Footer = () => {
             <Typography
               sx={{
                 display: "flex",
-                color: "black",
+                color: "gray",
                 alignItems: "center",
                 marginRight: "20px",
                 fontStyle: "none",
@@ -92,7 +97,7 @@ const Footer = () => {
                 sx={{
                   fontSize: "18px",
                   paddingRight: "5px",
-                  color: "#3d3c3c",
+                  color: "#2d2c2c",
                   "&:hover": { color: "blue" },
                 }}
               />
@@ -101,6 +106,9 @@ const Footer = () => {
           </a>
         </Box>
       </Box>
+      <Typography color="gray" marginTop="10px">
+        Todos direitos reservados © Ribas Oficial 2024
+      </Typography>
     </Box>
   );
 };

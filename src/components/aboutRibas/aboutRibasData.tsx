@@ -1,4 +1,4 @@
-export const atuation = [
+export const aboutData = [
   { name: "14 anos na area de vendas" },
   { name: "Empresário e Empreendedor" },
   { name: "10 anos Gestor de alta performance" },

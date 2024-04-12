@@ -1,20 +1,12 @@
-import {
-  Box,
-  Typography,
-  Button,
-  Grid,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { Box, Typography, Grid, useMediaQuery, useTheme } from "@mui/material";
 
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import { atuation } from "../components/atuationRibas/objAtuation";
+import { aboutData } from "./aboutRibas/aboutRibasData";
 
 const About = () => {
   const theme = useTheme();
   const downSm = useMediaQuery(theme.breakpoints.down("sm"));
   const downMd = useMediaQuery(theme.breakpoints.down("md"));
-  const upXl = useMediaQuery(theme.breakpoints.up("xl"));
 
   return (
     <Box
@@ -36,7 +28,6 @@ const About = () => {
           <Typography
             variant="overline"
             sx={{
-              bacground: "blue",
               color: "#C28B13",
               fontWeight: 300,
               width: "100%",
@@ -75,7 +66,7 @@ const About = () => {
           </Typography>
         </Grid>
         <Grid item sm={6} xs={12}>
-          {atuation.map((item, index) => {
+          {aboutData.map((item, index) => {
             return (
               <Box
                 key={index}

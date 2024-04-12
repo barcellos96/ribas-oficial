@@ -3,19 +3,25 @@ import {
   Typography,
   Button,
   Grid,
-  Card,
   TextField,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
 
-import capa from "../assets/capa.png";
+import capa from "assets/capa.png";
 
 const SectionMarketingEbook = () => {
   const theme = useTheme();
   const downSm = useMediaQuery(theme.breakpoints.down("sm"));
   const downMd = useMediaQuery(theme.breakpoints.down("md"));
   const upXl = useMediaQuery(theme.breakpoints.up("xl"));
+
+  const handleHomeClick = () => {
+    window.open(
+      "https://api.whatsapp.com/send?phone=5551991662343&text=Olá,%20vim%20do%20seu%20site%20e%20gostaria%20de%20tirar%20algumas%20dúvidas...",
+      "_blank"
+    ); // Abre a página inicial em uma nova janela
+  };
 
   return (
     <Box
@@ -53,7 +59,7 @@ const SectionMarketingEbook = () => {
             sx={{
               fontSize: "24px",
               fontWeight: 900,
-              color: "#FFF",
+              color: "#FFFFFF",
             }}
           >
             RECEBA SEU E-BOOK GRATUITAMENTE
@@ -62,7 +68,7 @@ const SectionMarketingEbook = () => {
             variant="overline"
             sx={{
               fontSize: "12px",
-              color: "#FFF",
+              color: "#FFFFFF",
             }}
           >
             persuadir seus clientes com as melhores perguntas, levando ele a
@@ -74,7 +80,7 @@ const SectionMarketingEbook = () => {
             sx={{
               marginTop: "10px",
               marginBottom: "10px",
-              backgroundColor: "#FFF",
+              backgroundColor: "#FFFFFF",
             }}
           />
           <Button
@@ -107,6 +113,7 @@ const SectionMarketingEbook = () => {
 
       <Button
         variant="outlined"
+        onClick={handleHomeClick}
         sx={{
           backgroundColor: "transparent",
           height: "75px",
