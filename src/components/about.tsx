@@ -76,6 +76,7 @@ const About = () => {
                   marginTop: "15px",
                   alignItems: "center",
                   paddingLeft: downMd ? "0" : "100px",
+                  gap: 1,
                 }}
               >
                 <ArrowRightAltIcon sx={{ color: "#C28B13" }} />

@@ -17,7 +17,7 @@ const SectionMarketingMeeting = () => {
     <Box
       sx={{
         display: "flex",
-        paddingLeft: "10%",
+        paddingLeft: "15%",
         alignItems: "center",
         justifyItems: "center",
         paddingTop: "30px",
@@ -62,7 +62,7 @@ const SectionMarketingMeeting = () => {
       <Box
         sx={{
           display: "flex",
-          marginRight: downSm ? 6 : downMd ? 2 : 10,
+          marginRight: downSm ? 6 : downMd ? 2 : 42,
           marginLeft: downSm ? -2 : 0,
           marginTop: downSm ? 2 : 0,
           flexDirection: "column",

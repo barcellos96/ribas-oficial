@@ -6,6 +6,7 @@ import NewArticles from "components/articles";
 import CallToActionSection from "components/action";
 import DepositionsSection from "components/depositions/depositionsSection";
 import SectionMarketingMeeting from "components/sections/sectionMarketingMeeting";
+import { Box } from "@mui/material";
 
 const Home = () => {
   return (
@@ -13,9 +14,17 @@ const Home = () => {
       <Header />
       <SectionMarketingMeeting />
       <About />
-      <SectionMarketingEbook />
-      <NewArticles />
-      <CallToActionSection />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: 12,
+        }}
+      >
+        <SectionMarketingEbook />
+        {/* <NewArticles /> */}
+        <CallToActionSection />
+      </Box>
       <DepositionsSection />
       <Footer />
     </>

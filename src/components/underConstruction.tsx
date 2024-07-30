@@ -1,6 +1,5 @@
-import React from "react";
 import { Box, Typography, CircularProgress } from "@mui/material";
-import { Construction, HourglassEmpty } from "@mui/icons-material";
+import { Construction } from "@mui/icons-material";
 
 const UnderConstructionPage = () => {
   return (
